@@ -12,7 +12,14 @@ const router = createRouter({
     {
       path:'/home',
       name:'home',
-      component:Home
+      component:Home,
+      children:[
+        {
+          path:"roles",
+          name:"roles",
+          component:()=>import('../views/roles.vue')
+        },
+      ]
     }
   ]
 })

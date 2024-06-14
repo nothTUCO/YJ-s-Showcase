@@ -5,10 +5,11 @@
         <nav class="nav-list">
             <ul class="nav-ul">
                 <li class="nav-li">Home</li>
-                <li class="nav-li">About</li>
+                <router-link to="roles"><li class="nav-li">About</li></router-link>
                 <li class="nav-li">Contact</li>
             </ul>
         </nav>
+        <router-link to="/"><el-button type="danger" plain>Danger</el-button></router-link>
     </header>
     <h1>Hello World</h1>
     <div class="content">
