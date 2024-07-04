@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import home from "../pages/home.vue";
 import login from "../pages/login.vue";
 import about from '../pages/about.vue';
-
+import jd from '../pages/MyShowcase/jd.vue'
 
 
 const router = createRouter({
@@ -19,14 +19,15 @@ const router = createRouter({
       {
         path:'/about',
         component:about,
-        children:
-        [
-          {
-            
-          }
-        ]
-      }
         
+        
+         
+      },
+        {
+            path:'/jd',
+            component:jd,
+          }
+         
       
       
     ]
